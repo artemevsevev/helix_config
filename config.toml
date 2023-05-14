@@ -1,8 +1,10 @@
-theme = "onelight"
+theme = "gruvbox_light"
 
 [editor]
+auto-save = true
 line-number = "relative"
 bufferline = "multiple"
+color-modes = true
 true-color = true
 cursorline = true
 gutters = ["diagnostics", "spacer", "line-numbers", "spacer", "diff"]
@@ -20,14 +22,15 @@ hidden = false
 
 [editor.lsp]
 display-messages = true
+display-inlay-hints = true
 
 [keys.insert]
 j = { k = "normal_mode" } # Maps `jk` to exit insert mode
 
 [editor.statusline]
-left = ["mode", "spinner"]
+left = ["mode", "spinner", "version-control"]
 center = ["file-name"]
-right = ["diagnostics", "selections", "position", "file-encoding", "file-line-ending", "file-type"]
+right = ["diagnostics", "selections", "position", "file-encoding", "file-type"]
 separator = "│"
 mode.normal = "NORMAL"
 mode.insert = "INSERT"

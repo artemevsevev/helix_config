@@ -1,4 +1,4 @@
-theme = "gruvbox_light"
+theme = "gruvbox_dark_hard"
 
 [editor]
 auto-save = true
@@ -25,6 +25,9 @@ hidden = false
 display-messages = true
 display-inlay-hints = true
 display-signature-help-docs = true
+
+[keys.normal]
+C-s = ":w"
 
 [keys.insert]
 j = { k = "normal_mode" } # Maps `jk` to exit insert mode

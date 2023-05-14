@@ -7,10 +7,11 @@ bufferline = "multiple"
 color-modes = true
 true-color = true
 cursorline = true
-gutters = ["diagnostics", "spacer", "line-numbers", "spacer", "diff"]
 mouse = true
 auto-format = true
-# rulers = [100]
+
+[editor.indent-guides]
+render = true
 
 [editor.cursor-shape]
 insert = "bar"
@@ -21,21 +22,16 @@ select = "underline"
 hidden = false
 
 [editor.lsp]
-display-messages = true
+display-messages = false
 display-inlay-hints = true
 
 [keys.insert]
 j = { k = "normal_mode" } # Maps `jk` to exit insert mode
 
 [editor.statusline]
-left = ["mode", "spinner", "version-control"]
+left = ["mode", "version-control", "spacer", "spinner"]
 center = ["file-name"]
-right = ["diagnostics", "selections", "position", "file-encoding", "file-type"]
-separator = "│"
-mode.normal = "NORMAL"
-mode.insert = "INSERT"
-mode.select = "SELECT"
-
-# [[language]]
-# name = "rust"
-# auto-format = true
+right = ["diagnostics", "selections", "file-encoding", "file-type", "position", "position-percentage", "spacer"]
+# mode.normal = "NORMAL"
+# mode.insert = "INSERT"
+# mode.select = "SELECT"

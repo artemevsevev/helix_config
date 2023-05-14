@@ -22,8 +22,9 @@ select = "underline"
 hidden = false
 
 [editor.lsp]
-display-messages = false
+display-messages = true
 display-inlay-hints = true
+display-signature-help-docs = true
 
 [keys.insert]
 j = { k = "normal_mode" } # Maps `jk` to exit insert mode

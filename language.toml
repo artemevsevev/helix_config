@@ -1,0 +1,7 @@
+######## Rust ########
+
+[[language]]
+name = "rust"
+
+[language.config.check]
+command = "clippy"

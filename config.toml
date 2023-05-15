@@ -27,15 +27,16 @@ display-inlay-hints = true
 display-signature-help-docs = true
 
 [keys.normal]
-C-s = ":w"
+# C-s = ":w"
+# C-q = ":q"
 
 [keys.insert]
 j = { k = "normal_mode" } # Maps `jk` to exit insert mode
 
 [editor.statusline]
-left = ["mode", "version-control", "spacer", "spinner"]
+left = ["mode", "spacer", "version-control", "spacer", "spinner"]
 center = ["file-name"]
 right = ["diagnostics", "selections", "file-encoding", "file-type", "position", "position-percentage", "spacer"]
-# mode.normal = "NORMAL"
-# mode.insert = "INSERT"
-# mode.select = "SELECT"
+mode.normal = "NORMAL"
+mode.insert = "INSERT"
+mode.select = "SELECT"

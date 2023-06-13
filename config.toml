@@ -1,4 +1,4 @@
-theme = "autumn"
+theme = "darcula"
 
 [editor]
 auto-save = true

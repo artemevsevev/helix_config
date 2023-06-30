@@ -1,6 +1,7 @@
 theme = "darcula"
 
 [editor]
+scrolloff = 10
 auto-save = true
 line-number = "relative"
 bufferline = "multiple"
@@ -9,6 +10,7 @@ true-color = true
 cursorline = true
 mouse = true
 auto-format = true
+undercurl = true
 
 [editor.indent-guides]
 render = true
@@ -19,7 +21,7 @@ normal = "block"
 select = "underline"
 
 [editor.file-picker]
-hidden = false
+# hidden = false
 
 [editor.lsp]
 display-messages = true
@@ -29,15 +31,14 @@ display-signature-help-docs = true
 [keys.normal]
 # C-p = ["move_line_up", "scroll_up"]
 # C-n = ["move_line_down", "scroll_down"]
-esc = ["collapse_selection", "keep_primary_selection"]
+# esc = ["collapse_selection", "keep_primary_selection"]
 
 [keys.normal.space]
 w = ":write"
 q = ":quit"
+c = ":buffer-close"
 
 [keys.insert]
-# j = { k = "normal_mode" }
-# k = { j = "normal_mode" }
 up = "no_op"
 down = "no_op"
 left = "no_op"
@@ -49,8 +50,5 @@ end = "no_op"
 
 [editor.statusline]
 left = ["mode", "spacer", "version-control", "spacer", "spinner"]
-center = ["file-name"]
-right = ["diagnostics", "selections", "file-encoding", "file-type", "position", "position-percentage", "spacer"]
-mode.normal = "NORMAL"
-mode.insert = "INSERT"
-mode.select = "SELECT"
+center = ["file-name", "diagnostics"]
+right = ["workspace-diagnostics", "file-encoding", "file-type", "position", "position-percentage", "spacer"]

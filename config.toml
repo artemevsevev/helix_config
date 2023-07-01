@@ -1,4 +1,4 @@
-theme = "darcula"
+theme = "autumn"
 
 [editor]
 scrolloff = 10
@@ -10,10 +10,10 @@ true-color = true
 cursorline = true
 mouse = true
 auto-format = true
-undercurl = true
+# undercurl = true
 
 [editor.indent-guides]
-render = true
+# render = true
 
 [editor.cursor-shape]
 insert = "bar"

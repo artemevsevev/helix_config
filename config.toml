@@ -51,6 +51,9 @@ home = "no_op"
 end = "no_op"
 
 [editor.statusline]
-left = ["mode", "spacer", "version-control", "spacer", "spinner"]
-center = ["file-name", "diagnostics"]
-right = ["workspace-diagnostics", "file-encoding", "file-type", "position", "position-percentage", "spacer"]
+left = ["mode", "spacer", "version-control", "spacer", "workspace-diagnostics", "spacer", "spinner"]
+center = ["file-name", "spacer", "diagnostics"]
+right = ["file-type", "spacer",  "position-percentage", "spacer"]
+mode.normal = "NORMAL"
+mode.insert = "INSERT"
+mode.select = "SELECT"

@@ -21,7 +21,7 @@ normal = "block"
 select = "underline"
 
 [editor.file-picker]
-# hidden = false
+hidden = false
 
 [editor.lsp]
 display-messages = true
@@ -49,6 +49,10 @@ pageup = "no_op"
 pagedown = "no_op"
 home = "no_op"
 end = "no_op"
+
+[keys.insert.j]
+j = "normal_mode"
+k = "normal_mode"
 
 [editor.statusline]
 left = ["mode", "spacer", "version-control", "spacer", "spinner"]

@@ -10,7 +10,7 @@ true-color = true
 cursorline = true
 mouse = true
 auto-format = true
-# undercurl = true
+undercurl = true
 
 [editor.indent-guides]
 # render = true
